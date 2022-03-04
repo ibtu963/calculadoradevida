@@ -23,20 +23,27 @@ class CalculadoraVida extends StatelessWidget {
   }
 
   QueEdadTiene() {
+    var abue = 0, adul = 0, jov = 0, boy = 0, baby = 0;
+    abue = 31536000 * 60;
+    adul = 31536000 * 35;
+    jov = 31536000 * 22;
+    boy = 31536000 * 11;
+    baby = 31536000 * 3;
+
     //60 year
-    if (differenceSeg < {31536000 * 60}) {
+    if (differenceSeg < abue) {
       etapa = "abuelo";
       //35 year
-      if (differenceSeg < {31536000 * 35}) {
+      if (differenceSeg < adul) {
         etapa = "adulto";
         //22 year
-        if (differenceSeg < {31536000 * 22}) {
+        if (differenceSeg < jov) {
           etapa = "joven";
           //11 years
-          if (differenceSeg < {31536000 * 11}) {
+          if (differenceSeg < boy) {
             etapa = "boy";
             //3 year
-            if (differenceSeg < {31536000 * 3}) {
+            if (differenceSeg < baby) {
               etapa = "baby";
             }
           }
